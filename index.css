@@ -1,0 +1,174 @@
+body, html{
+    position: relative;
+    background-color: rgb(240, 235, 248);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 8px;
+}
+
+html.classic-mode *{
+    .form{
+        display: inline-block;
+    }
+    
+    
+    
+    .tempat-key{
+        position: relative;
+        width: 120px;
+        height: auto;
+        display: inline-block;
+        margin: 8px
+    }
+    
+    .hasil-key{
+        position: relative;
+        width: 240px;
+        height: auto;
+        display: inline-block;
+        margin: 8px
+    }
+    
+    .tempat-key.nulis{
+        cursor: text;
+    }
+    
+    .tempat-key.pilih{
+        cursor: pointer;
+    }
+    
+    .sticky-letter{
+        position: absolute;
+        right: 0;
+        bottom: 2px;
+    }
+    
+    .hasil-div{
+        margin: 8px;
+        word-break: break-all;
+    }
+    
+    .gak-lengkap{
+        color: crimson;
+    }
+    
+    .setting-gui-frame {
+        background-color: rgb(235, 235, 235);
+        box-sizing: border-box;
+        position: fixed;
+        width: 70%;
+        height: 80%;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%);
+        padding: 16px;
+        border-color: rgb(0, 0, 0);
+        border-width: 1px;
+        border-style: inset;
+    }
+    
+    .setting-gui-frame.showsetting{
+        display: block;
+    }
+    
+    .setting-gui-frame.hidesetting{
+        display: none;
+    }
+    
+    .setting-gui{
+        position: absolute;
+        width: calc(100% - 32px);
+        height: calc(100% - 32px);
+    }
+    
+    .settingbutton {
+        *{
+            position: absolute;
+            width: auto;
+            height: auto;
+            top: 0;
+            right: 0;
+            border-width: 0px;
+        }
+
+        :hover{
+            text-decoration: underline;
+            cursor: pointer;
+            color: #3a3a3a;
+        }
+        button{
+            background-color: transparent;
+        }
+    }
+    
+    .link{
+        transform: translateX(-75px);
+    }
+    
+    .opensettingbuttonicon{
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        top: 0;
+        right: 0;
+        transform: translate(21%, -20%);
+    }
+
+    .setting-select{
+        display: grid;
+        min-width: 0px;
+        grid-template-columns: 100px 50%;
+        align-items: center;
+        gap: 16px 0px;
+        margin: 10px;
+        *:hover{
+            cursor: pointer;
+            color: #2b2b2b;
+            text-decoration: underline;
+        }
+    }
+    
+    .setting-checkbox{
+        display: grid;
+        min-width: 0px;
+        grid-template-columns: 32px auto;
+        align-items: center;
+        gap: 16px 0px;
+        *:hover{
+            cursor: pointer;
+            color: #2b2b2b;
+            text-decoration: underline;
+        }
+    }
+    
+    
+    
+    .setting input{
+        display: inline-block;
+        position: relative;
+        width: 16px;
+        height: auto;     
+    }
+    
+    .setting input:hover{
+        cursor: pointer;
+    }
+    
+    .setting label{
+        display: inline-block;
+        font-size: larger;
+    }
+    
+    .setting label:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+html.renewed *{
+    .center-grid{
+        display: grid;
+    }
+}

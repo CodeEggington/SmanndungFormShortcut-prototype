@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="classic-mode">
+    <head>
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" charset="UTF-8">
+        <Title>Formulir SMANNDUNG Shortcut</Title>
+        <h1>Formulir SMANNDUNG Shortcut</h1>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div name="form" class="form">
+            <label class="tempat-key nulis" for='NamaLengkap'>Nama Lengkap<span class="sticky-letter">: </span></label>
+            <input type="text" name="Nama Lengkap" id="NamaLengkap">
+            <br>
+            <label class="tempat-key pilih" for='Kelas'>Kelas<span class="sticky-letter">: </span></label>
+            <select name="Kelas" id="Kelas"></select>
+            <br>
+            <label class="tempat-key nulis" for='Alamat'>Alamat<span class="sticky-letter">: </span></label>
+            <input type="text" name="Alamat" id="Alamat">
+            <br>
+            <label class="tempat-key nulis" for='NomorWA'>Nomor WA<span class="sticky-letter">: </span></label>
+            <input type="text" name="Nomor WA" id="NomorWA">
+            <br>
+            <br>
+            <br>
+            <span class="hasil-key">Shortcut Form Jam Malam 😴🌙<span class="sticky-letter">: </span></span>
+            <div id="Hasil Jam Malam Div" class="hasil-div"></div>
+            <br>
+            <span class="hasil-key">Shortcut Form Sholat Shubuh 🤲🕌<span class="sticky-letter">: </span></span>
+            <div id="Hasil Shubuh Div" class="hasil-div"></div>
+        </div>
+
+        <div class="setting-gui-frame hidesetting" id="setting-gui">
+            <span class="setting-gui">
+                <div class="settingbutton">
+                    <button onclick="closesetting()">Close</button>
+                </div>
+                <br>
+                <div class="setting-select">
+                    <label for="ModeTema">Mode Tema :</label>
+                    <select name="Select Theme" id="ModeTema">
+                        <option value="./Theme/classic-mode.txt">Classic Theme</option>
+                    </select>
+                </div>
+                <div class="setting-checkbox">
+                    <input type="checkbox" id="SingkatHasil" checked>
+                    <label for="SingkatHasil" title="Mengubah hasil formulir dari link jadi tulisan pendek. (Dekoratif)">Singkatkan Hasil</label>
+                    <input type="checkbox" id="GunakanSistemLoad">
+                    <label for="GunakanSistemLoad" title="Meload sistem melalui Folder Theme, Butuh refresh (Experimental) (Dekoratif)">Load Tema Pakai Theme/</label>
+                    <input type="checkbox" id="AbaikanKosong">
+                    <label for="AbaikanKosong" title="Hasil tetap muncul walaupun formulir belum lengkap. (Fitur)">Abaikan Input Kosong di Hasil</label>
+                    <input type="checkbox" id="AdakanTanggal" checked>
+                    <label for="AdakanTanggal" title="Hasil dari formulir akan menyiapkan tanggal secara otomatis via redirect link dulu.">Adakan Tanggal di Hasil</label>
+                </div>
+            </span>    
+        </div>
+
+        <div class="settingbutton">
+            <button onclick="opensetting()">Setting</button>
+            <a class='link' href="https://github.com/CodeEggington/SmanndungFormShortcut">Github</a>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
