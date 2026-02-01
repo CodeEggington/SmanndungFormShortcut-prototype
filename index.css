@@ -171,8 +171,13 @@ html.classic-mode *{
     }
 }
 
-html.renewed *{
-    .center-grid{
+html.renewed-mode *{
+    .Grid{
+        position: absolute;
+        width: 80%;
         display: grid;
+        right: 50%;
+        transform: translatex(50%);
+        background-color: aqua;
     }
 }
