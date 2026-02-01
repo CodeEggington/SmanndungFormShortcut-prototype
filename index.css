@@ -165,6 +165,10 @@ html.classic-mode *{
         text-decoration: underline;
         cursor: pointer;
     }
+
+    .ModeTema{
+        width: 135px;
+    }
 }
 
 html.renewed *{
